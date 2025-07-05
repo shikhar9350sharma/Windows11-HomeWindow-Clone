@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.maincontainer {
+    max-width: 100%;
+    height: 90vh;
+    position: relative;
+
+}
+.maincontainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.taskbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: lightgray;
+    /* border: 1px solid darkblue; */
+}
+
+.first-part-box {
+    border-radius: 5px;
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+}
+.first-part:hover,
+.file-manager:hover,
+.chrome-image:hover,
+.whatsapp-image:hover,
+.copilet-image:hover,
+.microsoft-image:hover,
+.camera-image:hover,
+.task-view-image:hover {
+    background-color: rgb(179, 179, 179);
+}
+.first-part,
+.file-manager,
+.chrome-image,
+.whatsapp-image,
+.copilet-image,
+.microsoft-image,
+.camera-image,
+.task-view-image{
+    padding: 5px;
+    border-radius: 5px;
+}
+.first-part,.second-part, .third-part{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.span-1 {
+    font-size: 16px;
+}
+
+.span-2 {
+    font-size: 0.8em;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    border: 1px solid #000000;
+    border-radius: 25px;
+    padding: 8px;
+}
+
+input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 14px;
+    background-color: lightgrey;
+}
+.up-arrow, .cloud-image, .english-box, .volume-box, .time-date{
+    margin: 2px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.up-arrow:hover, .cloud-image:hover, .english-box:hover, .volume-box:hover, .time-date:hover{
+    background-color: rgb(179, 179, 179);
+}
+.english-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 14px;
+    gap: 2px;
+}
+.volume-box{
+    display: flex;
+}
+.wifi-svg, .volume-svg, .battary-svg{
+    margin: 2px;
+}
+.time-date{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.date-span{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px){
+    .taskbar {
+        height: 15vh;
+    }
+    .searchbar,
+    .file-manager,
+    .copilet-image,
+    .task-view-image,
+    .up-arrow,
+    .cloud-image,
+    .english-box {
+        display: none;
+    }
+
+}
